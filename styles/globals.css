@@ -7,15 +7,27 @@
 	--black: #000;
 	--purple: #764ba2;
 	--blue: #667eea;
+	--gradient: linear-gradient(to bottom, #667eea, #764ba2);
 }
 
-html,
+/* html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: var(--font-stack-1);
-}
+} */
 
 * {
+	font-family: var(--font-stack-1);
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-stack-2);
 }
