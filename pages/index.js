@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styled from 'styled-components'
 import {ArrowRightIcon} from '@primer/octicons-react'
 import About from '../components/About'
+import Services from '../components/Services'
 
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         </Container>
       </Hero>
       <About/>
+      <Services/>
     </>
   )
 }
