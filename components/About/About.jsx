@@ -1,7 +1,8 @@
-import styled from 'styled-components'
 import Image from  'next/image'
+import { Wrapper, Container, ContentWrapper, Content, ContentImg } from './styles';
 
-import aboutImg from '../public/images/about.jpg'
+
+import aboutImg from '../../public/images/about.jpg'
 
 
 const About = () => {
@@ -28,68 +29,3 @@ const About = () => {
 }
  
 export default About;
-
-const Wrapper = styled.div`
-    margin: 20px 0;
-`
-
-const Container = styled.div`
-    width: 80%;
-    margin: auto;
-
-    h3{
-        font-size: 1.8em;
-        text-align: center;
-
-        span{
-            background-image: var(--gradient);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            -webkit-text-fill-color: transparent; 
-            -moz-text-fill-color: transparent;
-        }
-    }
-`
-
-const ContentWrapper = styled.div`
-    @media(min-width: 1200px){
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 50px;
-    }
-`
-
-const Content = styled.div`
-    padding: 20px 30px;
-    padding-right: 40px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-    h4{
-        font-size: 1.4em;
-        margin: 7px 0;
-        background-image: var(--gradient);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent; 
-        -moz-text-fill-color: transparent;
-    }
-
-    @media(min-width: 1200px){
-        width: 40%;
-    }
-`
-
-const ContentImg = styled.div`
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    position: relative;
-    width: 100%;
-    height: 300px;
-
-    @media(min-width: 1200px){
-        top: 80px;
-        left: -33px;
-        width: 40%;
-        height: 300px;
-    }
-`

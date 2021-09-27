@@ -1,32 +1,7 @@
-import Link from 'next/link'
 import styled from 'styled-components'
-import {ArrowRightIcon} from '@primer/octicons-react'
-import About from '../components/About'
-import Services from '../components/Services'
 
 
-export default function Home() {
-  return (
-    <>
-      <Hero>
-        <Container>
-          <h1>Professional <br /> Cable TV installation</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat blanditiis alias commodi molestiae, magni deserunt</p>
-          <Link href="#">
-            <a>
-              <span>Learn More</span>
-              <ArrowRightIcon/>
-            </a>
-          </Link>
-        </Container>
-      </Hero>
-      <About/>
-      <Services/>
-    </>
-  )
-}
-
-const Hero = styled.div`
+export const Hero = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,7 +17,7 @@ const Hero = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
 `
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 80%;
   margin: auto;
 
@@ -75,4 +50,3 @@ const Container = styled.div`
     }
   }
 `
-

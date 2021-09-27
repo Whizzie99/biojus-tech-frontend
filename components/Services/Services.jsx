@@ -1,6 +1,5 @@
-import styled from "styled-components";
-
-import liveTvIcon from "../public/images/live_tv.png"
+import { Wrapper, Container, SectionTitle, ServicesWrapper, ServiceCard, CardIcon, CardTitle, CardBody } from "./styles";
+import liveTvIcon from "../../public/images/live_tv.png"
 
 const Services = () => {
     return (
@@ -104,64 +103,3 @@ const Services = () => {
  
 export default Services;
 
-const Wrapper = styled.div`
-    background: var(--grey);
-    padding: 200px 0;
-    clip-path: polygon(0 23%, 100% 0, 100% 81%, 0 100%);
-
-`
-
-const Container = styled.div`
-    width: 80%;
-    margin: auto;
-`
-
-const SectionTitle = styled.h3`
-    margin: 30px 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.8em;
-    background-image: var(--gradient);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-`
-
-const ServicesWrapper = styled.div`
-
-    margin: 20px 0;
-
-    @media(min-width: 1200px){
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-`
-
-const ServiceCard = styled.div`
-    background: var(--white);
-    padding: 30px;
-`
-
-const CardIcon = styled.div`
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-
-    span{
-        svg{
-            height: 50px;
-            width: 50px;
-        }
-    }
-`
-
-const CardTitle = styled.h3`
-    text-align: center;
-    margin: 10px 0;
-`
-
-const CardBody = styled.p``
