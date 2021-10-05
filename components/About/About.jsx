@@ -4,10 +4,11 @@ import { Wrapper, Container, ContentWrapper, Content, ContentImg } from './style
 
 import aboutImg from '../../public/images/about.jpg'
 
+const aboutId = 'about-section'
 
 const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id={aboutId}>
             <Container>
                 <h3><span>We get it.</span> It&apos;s more than just <span>value for money.</span> <br /> It&apos;s about <span>quality service</span></h3>
 

@@ -14,6 +14,7 @@ export const Container = styled.div`
 
         span{
             background-image: var(--gradient);
+            background-clip: text;
             -webkit-background-clip: text;
             -moz-background-clip: text;
             -webkit-text-fill-color: transparent; 
@@ -23,8 +24,13 @@ export const Container = styled.div`
 `
 
 export const ContentWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
     @media(min-width: 1200px){
         display: flex;
+        flex-direction: row;
         justify-content: center;
         width: 100%;
         margin-top: 50px;
@@ -40,10 +46,15 @@ export const Content = styled.div`
         font-size: 1.4em;
         margin: 7px 0;
         background-image: var(--gradient);
+        background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
         -webkit-text-fill-color: transparent; 
         -moz-text-fill-color: transparent;
+    }
+
+    @media(max-width: 1199.99px){
+        order: 1;
     }
 
     @media(min-width: 1200px){
@@ -56,6 +67,10 @@ export const ContentImg = styled.div`
     position: relative;
     width: 100%;
     height: 300px;
+
+    @media(max-width: 1199.99px){
+        box-shadow: none;
+    }
 
     @media(min-width: 1200px){
         top: 80px;

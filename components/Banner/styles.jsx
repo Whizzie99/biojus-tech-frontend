@@ -14,12 +14,13 @@ export const BannerText = styled.h3`
     font-size: 1.8em;
     text-transform: capitalize;
     background-image: var(--gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
 
-    &::before{
+    /* &::before{
         content: '';
         position: absolute;
         left: 25%;
@@ -28,9 +29,9 @@ export const BannerText = styled.h3`
         width:10px;
         border-radius: 50%;
         background: var(--gradient);
-    }
+    } */
 
-    &::after{
+    /* &::after{
         content: '';
         position: absolute;
         right: 25%;
@@ -39,5 +40,5 @@ export const BannerText = styled.h3`
         width:10px;
         border-radius: 50%;
         background: var(--gradient);
-    }
+    } */
 `

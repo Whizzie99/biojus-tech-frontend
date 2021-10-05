@@ -10,6 +10,7 @@ export const Container = styled.div`
 `
 
 export const Nav = styled.div`
+    /* position: relative; */
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -26,7 +27,7 @@ export const Logo = styled.div`
 
 `
 
-export const NavList = styled.div`
+export const StyledNavList = styled.div`
     & ul{
         display: flex;
 

@@ -4,7 +4,11 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     background: var(--grey);
     padding: 200px 0;
-    clip-path: polygon(0 23%, 100% 0, 100% 81%, 0 100%);
+    clip-path: polygon(0 18%, 100% 0%, 100% 86%, 0% 100%);
+
+    @media(min-width: 1200px){
+        clip-path: polygon(0 23%, 100% 0, 100% 81%, 0 100%);
+    }
 
 `
 
@@ -19,6 +23,7 @@ export const SectionTitle = styled.h3`
     text-transform: uppercase;
     font-size: 1.8em;
     background-image: var(--gradient);
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -26,7 +31,6 @@ export const SectionTitle = styled.h3`
 `
 
 export const ServicesWrapper = styled.div`
-
     margin: 20px 0;
 
     @media(min-width: 1200px){
@@ -41,9 +45,14 @@ export const ServiceCard = styled.div`
     padding: 30px;
     box-shadow: var(--box-shadow);
     transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
 
     &:hover{
         box-shadow: var(--box-shadow-hover);
+    }
+
+    @media(min-width: 1200px){
+        margin: 0;
     }
 `
 

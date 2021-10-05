@@ -1,46 +1,21 @@
-import Link from 'next/link'
-import { Container, Nav, Logo, NavList } from './styles';
+import useMatchMedia from '../Hooks/useMatchMedia';
+import NavList from './NavList';
+import MobileMenu from '../MobileMenu/MobileMenu';
+import { Container, Nav, Logo } from './styles';
 
 const Navbar = () => {
+
+    const isDesktopScreen = useMatchMedia('(min-width: 1200px)', true)
+    const isMobileScreen = useMatchMedia('(max-width: 1199.99px)', true)
+
     return (
             <Container>
                 <Nav>
                     <Logo>
                         <h5>Logo</h5>
                     </Logo>
-                    <NavList>
-                        <ul>
-                            <li>
-                                <Link href="/">
-                                    <a>home</a>
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">
-                                    <a>about</a>
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">
-                                    <a>shop</a>
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">
-                                    <a>services</a>
-                                </Link>
-                            </li>
-
-                            <li>
-                                <Link href="#">
-                                    <a>contact</a>
-                                </Link>
-                            </li>
-                        </ul>
-                    </NavList>
+                    {isDesktopScreen && (<NavList/>)}
+                    {isMobileScreen && (<MobileMenu/>)}
                 </Nav>
             </Container>
     );
