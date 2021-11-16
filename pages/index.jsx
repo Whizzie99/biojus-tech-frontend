@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Hero, Container } from './styles'
+import { Hero, Container } from '../styles/styles'
 import {ArrowRightIcon} from '@primer/octicons-react'
 import About from '../components/About/About'
 import Services from '../components/Services/Services'
