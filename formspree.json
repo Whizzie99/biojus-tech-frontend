@@ -1,0 +1,18 @@
+{
+    "forms": {
+        "contactUs":{
+            "name": "Contact Us",
+            "actions": [
+                {
+                    "type": "email",
+                    "to": "wisdomobiomadev@gmail.com"
+                }
+            ],
+            "fields": {
+                "email": {
+                    "required": true
+                }
+            }
+        }
+    }
+}
